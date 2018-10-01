@@ -23,6 +23,15 @@
     font-family: OpenSans-Regular;
     src: url(../fonts/OpenSans-Regular.ttf);
 }
+@font-face{
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: Roboto-Lite;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
 body{
     font-family: OpenSans-Regular;
 }
@@ -30,6 +39,7 @@ ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
 }
 h1{
     font-family: 'OpenSans-Bold';
@@ -46,6 +56,7 @@ h3{
 }
 li{
     margin: 0;
+
 }
 .main-page{
     max-width: 1100px;
@@ -117,6 +128,7 @@ header{
     transform: translate(-50%);
     margin: 0;
     
+    
 }
 ul.menu__list {
     -webkit-padding-start: 0;
@@ -124,6 +136,9 @@ ul.menu__list {
 .menu__item{
     display: inline-block;
     }
+.menu__link{
+    text-decoration: none;
+}
 .menu__icon{
     display: inline-block;
     text-decoration: none;
@@ -291,12 +306,196 @@ ul.menu__list {
 /*.feature-content__block ul{
     margin-top: 5px;
 }*/
-.news-container_header h1{
+/*.news-container_header h1{
     margin: 50px;
+}*/
+
+/*****************************************************
+******************************************************
+******************************************************
+Новости
+******************************************************
+******************************************************
+*****************************************************/
+
+.feeds__container {
+        margin-top: 70px;
+        display: inline-block;
+  }
+  .feeds__wrap-feeds-blocks{
+    display: inline-block;
+    width: 81%;
+  }
+
+
+  
+  .feeds__header {
+    width: auto;
+    margin-top: 68px;
+    margin-left: 51px;
+  }
+  
+  .feeds__block {
+    height: 190px;
+    width: 100%;
+    border-bottom: 2px solid #f5f5f5;
+    margin-left:0;
+    margin-bottom: 30px;
+    display: flex;
+  }
+  
+  .feeds__block:last-child {
+    border: none;
+  }
+  
+  .feeds__block:nth-child() {
+    border: none;
+  }
+  
+  .feeds__block:last-child {
+    border: none;
+  }
+  
+  .img__wrapper {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  
+  .feeds__img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .feeds__desc {
+    font-size: 18px;
+    max-width: 686px;
+    margin-left: 20px;
+  }
+  
+  .feeds__desc-time {
+    font-size: 14px;
+    color: #656464;
+    margin-top: -1px;
+  }
+  
+  .feeds__desc-header{
+    margin: 0;
+    font-family: 'Roboto-Bold',  Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 4px;
+  }
+  
+  .feeds__desc-text {
+    font-family: 'Roboto-Lite',  Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+
+  .feeds_wrap-top-feeds{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    vertical-align: top;
+  }
+
+  .feeds__top-feeds-header{
+      display: inline-block;
+      position: relative;
+      margin: 0 20px;
+      vertical-align: top;
+      box-sizing: border-box;
+  }
+.feeds__top-feeds-content{
+    overflow: hidden;
+} 
+.feeds__top-feeds-img-container{
+    width: 160px;
+    height: 160px;
+    margin: 20px;
 }
+  /* pagination */
+  
+  .pagination {
+    font-family: "Roboto-Lite", Arial, sans-serif;
+    font-size: 14px;
+    width: 1100px;
+  }
+  
+  .pagination__container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 44px;
+    margin-bottom: 59px;
+  }
+  
+  .feeds__pagination-display {
+    margin-left: 314px;
+  }
+  .feeds__pagination-pages {
+    list-style: none;
+    display: flex;
+    width: 214px;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 421px;
+    font-weight: bold;
+    justify-content: space-between;
+  
+  }
+  
+  .bracket {
+    font-size: 25px;
+    text-align: top;
+    position: relative;
+    top: -10px;
+    left: 2px;
+  }
+  
+  .bracket:first-child {
+    left: -3px;
+  }
+  
+  .feeds__pagination-link {
+    color: #221f1f;
+    text-decoration: none;
+  }
+  
+  .white {
+    color: #fff;
+  }
+  .feeds__pagination-link:hover {
+    color: #c17414;
+  }
+  
+  .feeds__pagination-item {
+    display: block;
+    position: relative;
+  }
+  
+  .feeds__pagination-item:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #27273e;
+    border-radius: 3px;
+    top: -5px;
+    left: -9px;
+    z-index: -10;
+  }
+  
 
 
-
+/*Конец Новостей*/
 
 .footer{
     background: #131415;
